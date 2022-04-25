@@ -50,6 +50,6 @@ jobs:
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
       - name: Redeploying ECS container
-        run: aws ecs update-service --cluster GrowthdaysAwsStack-MyCluster4C1BA579-N0dxPcRzw39b --service GrowthdaysAwsStack-MyFargateServiceF490C034-5sI8nLOyh9YZ --force-new-deployment
+        run: aws ecs update-service --cluster growth-days-cluster --service growth-days-service --force-new-deployment
 
 
