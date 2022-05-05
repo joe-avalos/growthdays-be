@@ -16,6 +16,7 @@ module.exports = {
         name: 'Whiskers',
         age: 4,
         breed: 'Persian',
+        image: 'https://placekitten.com/g/250/300',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -23,6 +24,7 @@ module.exports = {
         name: 'MeowTwo',
         age: 84,
         breed: 'Pokemon',
+        image: 'https://placekitten.com/g/280/300',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -30,13 +32,14 @@ module.exports = {
         name: 'Benito',
         age: 8,
         breed: 'Topcat',
+        image: 'https://placekitten.com/g/200/300',
         createdAt: new Date(),
         updatedAt: new Date()
       },
     ])
   },
   
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface) {
     /**
      * Add commands to revert seed here.
      *
